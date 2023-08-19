@@ -52,32 +52,32 @@ function getPing() {
     let people = document.getElementById("people");
     let gameVersion = document.getElementById("game-version");
 
-    fetch('https://api.mtsmc.net/ping/get-info')
-        .then(response => response.json()) // 将响应解析为 JSON
-        .then(data => {
-            if (data.errorcode == 404) {
-                const toastBootstrap = bootstrap.Toast.getOrCreateInstance(errorToast)
-                toastBootstrap.show()
-                status.innerText = "当前离线";
-                people.innerText = "null";
-                gameVersion.innerText = "null";
-                displayPingInfo();
-            }
-            else {
-                status.innerText = "当前在线";
-                people.innerText = data.players.online + " / " + data.players.max;
-                //gameVersion.innerText = data.version.name;
-                gameVersion.innerText = "1.18.2";
-                displayPingInfo();
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching JSON:', error);
-            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(errorToast)
-            toastBootstrap.show()
-            status.innerText = "unknown";
-            people.innerText = "null";
-            gameVersion.innerText = "null";
-            displayPingInfo();
-        });
+    // fetch('https://#/ping/get-info')
+    //     .then(response => response.json()) // 将响应解析为 JSON
+    //     .then(data => {
+    //         if (data.errorcode == 404) {
+    //             const toastBootstrap = bootstrap.Toast.getOrCreateInstance(errorToast)
+    //             toastBootstrap.show()
+    //             status.innerText = "当前离线";
+    //             people.innerText = "null";
+    //             gameVersion.innerText = "null";
+    //             displayPingInfo();
+    //         }
+    //         else {
+    //             status.innerText = "当前在线";
+    //             people.innerText = data.players.online + " / " + data.players.max;
+    //             //gameVersion.innerText = data.version.name;
+    //             gameVersion.innerText = "1.18.2";
+    //             displayPingInfo();
+    //         }
+    //     })
+    //     .catch(error => {
+    //         console.error('Error fetching JSON:', error);
+    //         const toastBootstrap = bootstrap.Toast.getOrCreateInstance(errorToast)
+    //         toastBootstrap.show()
+    //         status.innerText = "unknown";
+    //         people.innerText = "null";
+    //         gameVersion.innerText = "null";
+    //         displayPingInfo();
+    //     });
 }

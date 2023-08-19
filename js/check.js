@@ -21,7 +21,7 @@ function check() {
     setTimeout(function () {
         username = document.getElementById("username").value;
 
-        requestUrl = "https://api.mtsmc.net/white-list/query?player=" + username;
+        requestUrl = "https://api.#/white-list/query?player=" + username;
 
         fetch(requestUrl)
             .then(response => response.json())
