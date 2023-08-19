@@ -182,5 +182,5 @@ ol {
 }
 
 .dropdown__item a:hover {
-    background-color: var(--gray-light);
+    background-color: lightgray;
 }
