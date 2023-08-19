@@ -144,6 +144,52 @@
     margin-right: .5rem;
 }
 
+#pro-1 {
+    height: 360px;
+    background-image: url('../img/product/pro4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pro-2 {
+    background-image: url('../img/product/pro1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pro-3 {
+    background-image: url('../img/product/p2.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pp-1 {
+    height: 500px;
+    background-image: url('../img/product/pp1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pp-2 {
+    height: 500px;
+    background-image: url('../img/product/pp2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pp-3 {
+    height: 500px;
+    background-image: url('../img/product/pp3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 #pic-1 {
     background-image: url('../img/rlj.jpg');
     background-size: cover;
